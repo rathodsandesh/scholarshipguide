@@ -6,7 +6,7 @@ var Scholarship = require('./models/scholarship');
 var app = express();
 
 app.use(bodyParser.json());
-mongoose.connect('mongodb+srv://admin:admin@cluster0-t95hm.mongodb.net/test?retryWrites=true', { useNewUrlParser: true }, function(err){
+mongoose.connect('mongodb+srv://[admin]:[password]@cluster0-t95hm.mongodb.net/test?retryWrites=true', { useNewUrlParser: true }, function(err){
     if(err){
         console.log('Not connected to the database');
     }else{
